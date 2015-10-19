@@ -1,4 +1,4 @@
-$(document).ready(function () {    
+$(document).ready(function () {
 
     $(".popup-close").click(function(e){
         e.preventDefault();
