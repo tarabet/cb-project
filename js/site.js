@@ -38,27 +38,30 @@ $(document).ready(function () {
     });
 
 
-    $(".slider-main-item.item-anim")
-        .mousemove(function(e) {
-            var _thisW = $(this).width();
-            var _coord = parseFloat(-((_thisW - e.clientX)/_thisW * 100 / 10)); 
-            $(this).find(".bg-img").css('left',_coord+'%')
-        })
+    // DELETED: CODE MOVED TO DIRECTIVE FILE
+    //$(".slider-main-item.item-anim")
+    //    .mousemove(function(e) {
+    //        var _thisW = $(this).width();
+    //        var _coord = parseFloat(-((_thisW - e.clientX)/_thisW * 100 / 10));
+    //        $(this).find(".bg-img").css('left',_coord+'%')
+    //    })
 
     $(".needs-main-block")
         .mousemove(function(e) {
             var _thisW = $(this).width();
             var _coord = parseFloat(-((_thisW - e.clientX)/_thisW * 100 / 10)); 
             $(this).find(".bg-img").css('left',_coord+'%')
-        })
+        });
 
-    
-   
-    $(".main-slider-block").height($(window).height() - 160);
+
+    // DELETED: CODE MOVED TO DIRECTIVE FILE
+    //$(".main-slider-block").height($(window).height() - 160);
     $(".needs-main-block").height($(window).height() - 160);
 
-    $(".slider-main .slider-main-item").height($(window).height() - 160);
-    
+    // DELETED: CODE MOVED TO DIRECTIVE FILE
+    //$(".slider-main .slider-main-item").height($(window).height() - 160);
+
+    // DELETED: CODE MOVED TO DIRECTIVE FILE
     //setTimeout(function(){
     //    $(".key-advantage .container .text").each(function( i ) {
     //        var _parentH = $(this).parent().innerHeight();
